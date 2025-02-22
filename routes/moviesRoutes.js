@@ -4,10 +4,10 @@ const router = express.Router();
 // Import controller
 const { getMovies, getMoviesById } = require("../controllers/moviesController");
 
-// Route untuk mendapatkan semua film
+// Route for all movies
 router.get("/", getMovies);
 
-// Route untuk mendapatkan film berdasarkan ID
+// Route for get by ID
 router.get("/:id", getMoviesById);
 
 module.exports = router;

@@ -6,13 +6,13 @@ const PORT = 3000;
 // Import routes
 const movieRoutes = require("./routes/moviesRoutes");
 
-// Middleware untuk parsing JSON (opsional, untuk request body)
+// Middleware for parsing JSON
 app.use(express.json());
 
-// Gunakan movieRoutes dengan prefix "/movies"
+// route to movie
 app.use("/movies", movieRoutes);
 
-// Jalankan server
+// running server
 app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
 });
